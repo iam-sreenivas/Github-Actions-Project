@@ -2,10 +2,11 @@ name: CICD Pipeline
 
 on:
   push:
+     branches:
+         - main
      paths: 
        - '.github/workflows/demo.yml'
-     branches: [ "main" ]
-
+    
 jobs:
   compile:
     runs-on: ubuntu-latest
