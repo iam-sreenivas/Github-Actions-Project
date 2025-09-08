@@ -20,7 +20,7 @@ jobs:
       run: mvn compile
 
   security-check:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     needs: compile ## Run after stage is completed
 
     steps:
